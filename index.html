@@ -10,14 +10,66 @@
             background-color: powderblue;
         }
 
-        h1 {
-            color: blue;
-            text-shadow: 3px 2px red;
-            text-decoration: underline;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #3385ff;
+            border-radius: .9rem;
         }
 
-        p {
-            color: red;
+        li {
+            float: left;
+            border: 1px solid #bbb;
+            margin: 2px;
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-radius: .9rem;
+        }
+
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: rgb(4, 75, 4);
+            border-radius: .9rem;
+        }
+
+        li.dropdown {
+            display: inline-block;
+            border-radius: .9rem;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: .9rem;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: greenyellow;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
     </style>
 </head>
@@ -25,15 +77,60 @@
 <body>
 
     <center>
-        <h1>!!! le camp des D.Y.S !!!</h1>
+        <h1 style="color: blue;
+        text-shadow: 3px 2px red;
+        text-decoration: underline;">!!! le camp des D.Y.S !!!</h1>
     </center>
 
     <marquee behavior="alternate" direction="right" bgcolor="57A3EC"><b>
             <font color="red">créer pour aider les parents des enfants dyslexique</font>
         </b></marquee>
 
+    <ul style="margin: 40px;">
+        <li class="dropdown">
+            <a href="https://manu321-code.github.io/le-blog-de-Isabelle/" class="dropbtn">Accueil</a>
+            <div class="dropdown-content">
+                <a href="#...">Présenttation</a>
+                <a href="#...">Pour les parents</a>
+                <a href="#...">Pour les enfants</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#..." class="dropbtn">Présentation</a>
+            <div class="dropdown-content">
+                <a href="#...">...</a>
+                <a href="#...">...</a>
+                <a href="#...">...</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#..." class="dropbtn">Pour les parents</a>
+            <div class="dropdown-content">
+                <a href="#...">...</a>
+                <a href="#...">...</a>
+                <a href="#...">...</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#..." class="dropbtn">Pour les enfants</a>
+            <div class="dropdown-content">
+                <a href="#...">...</a>
+                <a href="#...">...</a>
+                <a href="#...">...</a>
+            </div>
+        </li>
+        <li style="float:right" class="dropdown">
+            <a class="dropbtn" href="#...">Informations</a>
+            <div class="dropdown-content">
+                <a href="#...">auteur Emmanuel</a>
+                <a href="#...">date 24-07-21</a>
+            </div>
+        </li>
+    </ul>
 
     <p>Ce site à été créer pour aider les parents des enfants dyslexique !</p>
+    <p>On regroupe sous “troubles Dys” les troubles cognitifs spécifiques et les troubles des apprentissages qu’ils
+        induisent.</p>
 
 </body>
 
